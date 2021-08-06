@@ -86,7 +86,7 @@ return function (spawnX,spawnY,GameScreenX,GameScreenY,GameScreenWidth,GameScree
         end
 
         buffer.drawImage(FuckingEnemy.x, FuckingEnemy.y, FuckingEnemy.Model)
-        if FuckingEnemy.ticks > 0 then buffer.drawText(FuckingEnemy.x,FuckingEnemy.y-1,0xFF0000,"Пиу-Пиу") end
+        if FuckingEnemy.ticks > 0 then buffer.drawText(FuckingEnemy.x,FuckingEnemy.y-1,0xFF0000,"Piw-Piw") end
       else
         TimeToSpawn=TimeToSpawn-1
       end
