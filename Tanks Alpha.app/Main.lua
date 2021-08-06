@@ -28,7 +28,7 @@ local computer = require("computer")
 local DisplayWidth,DisplayHeight = buffer.getResolution()
 local GameScreenX,GameScreenY,GameScreenWidth,GameScreenHeight = 28,3,100,44
 local enemySpawnPoint = {GameScreenX,GameScreenY,(GameScreenWidth+GameScreenX)/2+8,GameScreenY,GameScreenWidth+GameScreenX-8,GameScreenY}
-
+local winFlag = 1
 local momContainer = GUI.workspace()
 
 local function debug(x,y,container,comment)
@@ -79,7 +79,7 @@ myScreen:addChild(GUI.panel(1,1,myScreen.width,myScreen.height,0x0))
 --таблица счёта и жизни врагов------------------------------------
 local enemyTableInfo = momContainer:addChild(GUI.container(DisplayWidth-16,3,16,5))
 enemyTableInfo:addChild(GUI.panel(1,1,enemyTableInfo.width,enemyTableInfo.height,0xE0E0D1))
-enemyTableInfo:addChild(textToObject(enemyTableInfo.localX+1,enemyTableInfo.localY,"Жизни врага",0xFF9900))
+enemyTableInfo:addChild(textToObject(enemyTableInfo.localX+1,enemyTableInfo.localY,"Enemy lifes",0xFF9900))
 for i=1,enemyLifes do
   enemyTableInfo:addChild(textToObject(enemyTableInfo.localX+i,enemyTableInfo.localY+1,"♡",0xFF0000))
 end
@@ -227,9 +227,10 @@ momContainer.eventHandler = function(momContainer, object, eventData1, eventData
   end
 
   --------------------------------ЕСЛИ ВСЕ ТАНКИ УНИЧТОЖЕНЫ!-----------------------
-  if enemyTanksCount.text == 0 then
-    GUI.alert("Ахуеть, ты выиграл! ПОЗТРАВЛЯЮ НАХУЙ!")
+  if enemyTanksCount.text == 0 and winFlag==1 then
+    GUI.alert("Heeeey< u win!! Reboot game or close it.")
     enemyTanksCount.text = -1
+    winFlag=0
   end
 
 end
