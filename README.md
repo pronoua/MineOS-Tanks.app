@@ -1,8 +1,11 @@
 # MineOS-Tanks.app
 
 ----------------------------------EN-----------------------------------
+
 Game for MineOS(https://github.com/IgorTimofeev/MineOS)
+
 -----------------------------------------------------------------------
+
 A simple game written for MineOS. You can play through Minecraft with the OpenComputers mod.
 
 So far, the Alpha version of the game.
@@ -12,12 +15,14 @@ Should be similar (not yet) to Battle City for Nintendo / Nintendo / Sega.
 
 Copy, download, modify, modify. Do what you want. 
 Here the sources are just for the built-in application store in MineOS to install it on your computer in Minecraft.
-######################################################################
+
 
 
 
 ----------------------------------RU-----------------------------------
+
 Игра для MineOS(https://github.com/IgorTimofeev/MineOS)
+
 -----------------------------------------------------------------------
 Простая игра написана под MineOS. Играть можно через Minecraft с модом OpenComputers.
 
