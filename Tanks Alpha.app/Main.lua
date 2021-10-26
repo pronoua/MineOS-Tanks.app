@@ -228,7 +228,7 @@ momContainer.eventHandler = function(momContainer, object, eventData1, eventData
 
   --------------------------------ЕСЛИ ВСЕ ТАНКИ УНИЧТОЖЕНЫ!-----------------------
   if enemyTanksCount.text == 0 and winFlag==1 then
-    GUI.alert("Heeeey< u win!! Reboot game or close it.")
+    GUI.alert("Heeeey< u win!! Reboot game or close it. Meow!")
     enemyTanksCount.text = -1
     winFlag=0
   end
