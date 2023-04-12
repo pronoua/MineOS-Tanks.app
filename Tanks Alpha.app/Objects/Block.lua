@@ -11,7 +11,7 @@ return function (x, y, model)
   Block.localX = x
   Block.localY = y
 
-  Brick = image.load(PathToRes.."../Textures/Map/Brick_.pic")
+  Brick = image.load(PathToRes.."../Textures/Map/Brick.pic")
   Base = image.load(PathToRes.."../Textures/Map/Base.pic")
 
  Block.model = Brick
